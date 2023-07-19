@@ -76,20 +76,22 @@ nav ul{
     margin:  20px 0px;
 }
 /*banner section styles*/
-.banner{
+.banner,.we-are-gamer{
     display: flex;
     justify-content: space-evenly;
 }
-.banner-info{
+/*banner description styles*/
+.banner-description{
     margin: 148px 306px 148px 240px;
-
 }
+/*banner title styles*/
 .banner-title{
     color: #0B0223;
     font-size: 48px;
     font-weight: 600;
 }
-.banner-title-color{
+/*banner and gamer sections title color styles*/
+.banner-title-color, .gamer-title-color {
     font-size: 95px;
     text-align: center;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -98,6 +100,12 @@ nav ul{
     -webkit-text-fill-color: transparent;
     font-weight: 800;   
 }
+/*gamer sections title font styles*/
+.gamer-title-color {
+    font-size: 2rem;
+    text-align: right;
+}
+/*unordered division styles*/
 div ul{
     display: flex;
     justify-content: flex-start;
@@ -105,6 +113,7 @@ div ul{
     list-style: none;
     padding-left: 0% ;
 }
+/*primary button styles*/
 .btn-primary{
     font-size: 20px;
     font-weight: 600;
@@ -112,8 +121,8 @@ div ul{
     align-items: flex-start;
     gap: 10px;
     margin-top: 30px;
-    
 }
+/*primary pink color button styles*/
 .btn-primary-pink-color{ 
     color: #FFF; 
     border: 0px;
@@ -121,6 +130,7 @@ div ul{
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
     padding: 21px 40px;
 }
+/*primary bluen color button styles*/
 .btn-primary-blue-color{
     color: #FFF;
     border: 0px;
@@ -129,6 +139,31 @@ div ul{
     padding: 21px 40px;
 
 }
+/*gamer section styles*/
+.gamer-section{
+    text-align: right;
+}
+/*gamer banner description section styles*/
+.gamer-banner-description
+{    
+    width: 520px;
+    height: 120px;
+    color: #534C64;  
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; 
+    margin-right:0px ;
+}
+/*our purpose section styles*/
+.our-purpose{
+    color: #534C64;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+}
+/*responsive media*/
 @media screen and (max-width:575px){
     
     nav,ul ,.header,.header-info,.header-contact{
