@@ -90,8 +90,8 @@ nav ul{
     font-size: 48px;
     font-weight: 600;
 }
-/*banner and gamer sections title color styles*/
-.banner-title-color, .gamer-title-color {
+/*banner and gamer online games sections title color styles*/
+.banner-title-color, .gamer-title-color,.online-games-title-color {
     font-size: 95px;
     text-align: center;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -100,11 +100,23 @@ nav ul{
     -webkit-text-fill-color: transparent;
     font-weight: 800;   
 }
+/*online games sections title font styles*/
+.online-games-title,.online-games-title-color{
+    font-size: 2rem;
+}
+.online-games{
+    width: 500px;
+    height: 56;
+    margin:120px auto 24px auto;
+    text-align: center;
+}
+
 /*gamer sections title font styles*/
-.gamer-title-color {
+.gamer-title-color{
     font-size: 2rem;
     text-align: right;
 }
+
 /*unordered division styles*/
 div ul{
     display: flex;
@@ -115,16 +127,16 @@ div ul{
 }
 /*primary button styles*/
 .btn-primary{
-    font-size: 20px;
-    font-weight: 600;
     display: inline-flex;
     align-items: flex-start;
     gap: 10px;
     margin-top: 30px;
 }
 /*primary pink color button styles*/
-.btn-primary-pink-color{ 
+.btn-primary-pink-color, .btn-primary-blue-color{ 
     color: #FFF; 
+    font-size: 20px;
+    font-weight: 600;
     border: 0px;
     border-radius: 48px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
@@ -132,28 +144,26 @@ div ul{
 }
 /*primary bluen color button styles*/
 .btn-primary-blue-color{
-    color: #FFF;
-    border: 0px;
-    border-radius: 48px;
     background: #4EC5F7;
-    padding: 21px 40px;
-
 }
 /*gamer section styles*/
 .gamer-section{
     text-align: right;
 }
 /*gamer banner description section styles*/
-.gamer-banner-description
+.gamer-banner-description,.game-description
 {    
-    width: 520px;
-    height: 120px;
+    width: 450px;
     color: #534C64;  
     font-family: Work Sans;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px; 
     margin-right:0px ;
+}
+.game-description{
+    width: 342px;
+    text-align: center;
 }
 /*our purpose section styles*/
 .our-purpose{
@@ -163,6 +173,20 @@ div ul{
     font-weight: 500;
     line-height: 45px;
 }
+.online-games-videos-section{
+    display: flex;
+    justify-content: center; 
+    gap: 24px;
+ 
+}
+.online-games-videos{
+   
+width: 342px;
+height: 400px;
+    
+}
+
+
 /*responsive media*/
 @media screen and (max-width:575px){
     
