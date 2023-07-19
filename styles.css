@@ -75,7 +75,60 @@ nav ul{
     width: 30%;
     margin:  20px 0px;
 }
+/*banner section styles*/
+.banner{
+    display: flex;
+    justify-content: space-evenly;
+}
+.banner-info{
+    margin: 148px 306px 148px 240px;
 
+}
+.banner-title{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+}
+.banner-title-color{
+    font-size: 95px;
+    text-align: center;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;   
+}
+div ul{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    list-style: none;
+    padding-left: 0% ;
+}
+.btn-primary{
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 30px;
+    
+}
+.btn-primary-pink-color{ 
+    color: #FFF; 
+    border: 0px;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    padding: 21px 40px;
+}
+.btn-primary-blue-color{
+    color: #FFF;
+    border: 0px;
+    border-radius: 48px;
+    background: #4EC5F7;
+    padding: 21px 40px;
+
+}
 @media screen and (max-width:575px){
     
     nav,ul ,.header,.header-info,.header-contact{
