@@ -75,10 +75,18 @@ nav ul{
     width: 30%;
     margin:  20px 0px;
 }
+/* main section styles*/
+main{
+    width: 1920px;
+    height: 600px;
+}
 /*banner section styles*/
-.banner,.we-are-gamer{
+.banner,.we-are-gamer,.play-online-games{
+    margin-top: 150px;
+    margin-bottom: 0%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 /*banner description styles*/
 .banner-description{
@@ -180,11 +188,25 @@ div ul{
  
 }
 .online-games-videos{
-   
-width: 342px;
-height: 400px;
+   width: 342px;
+   height: 400px;   
+}
+
+.online-game-img{
+    width: 710px;
+    height: 650px;
+}
+.overflow-img{
+    width: 318px;
+    height: 365px;
+    border-radius: 8px;
+    border: 10px solid #FFF;
+    position: relative;
+    bottom: 200px;
+    left: 500px;
     
 }
+
 
 
 /*responsive media*/
