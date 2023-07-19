@@ -19,7 +19,6 @@ nav{
 .header-container{
    width: 1920px;
    height: 130px;
-  
 }
 /* header styles*/
 .header{
@@ -74,11 +73,6 @@ nav ul{
 .header-icon{
     width: 30%;
     margin:  20px 0px;
-}
-/* main section styles*/
-main{
-    width: 1920px;
-    height: 600px;
 }
 /*banner section styles*/
 .banner,.we-are-gamer,.play-online-games{
@@ -200,21 +194,85 @@ div ul{
     width: 318px;
     height: 365px;
     border-radius: 8px;
-    border: 10px solid #FFF;
     position: relative;
     bottom: 200px;
     left: 500px;
     
 }
+.game-type-info{
+    width: 243px;
+    height: 80px;
+    background: #FFF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.game-type-info:hover{
+    cursor: pointer;
+    border: 3px solid palevioletred;
+    border-radius: 50px;
+}
+.game-types{
+    width: 1700px;
+    height: 500px;
+    margin: 400px 320px 71px 240px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;  
+    align-items: center;
+}
 
+/*footer section styles*/
 
+.footer-section{
+    background: #0B0223;
+    align-items: center;
+    padding-bottom: 150px;
+}
+.footer-header{
+    color: #FFF;
+    font-size: 45px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.footer-element{
+    
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.footer-icon,.footer-types-element{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 66px;
 
+}
+.footer-types-element{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.footer-massage{
+    color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+margin-top:28px ;
+}
 /*responsive media*/
 @media screen and (max-width:575px){
     
-    nav,ul ,.header,.header-info,.header-contact{
+    nav,ul ,.header,.header-info{
         flex-direction: column;
     }
-    
     
 }
