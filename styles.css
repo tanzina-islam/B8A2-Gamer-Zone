@@ -13,7 +13,7 @@ nav{
     margin-top: 37px;
     margin-bottom: 37px; 
     background-color:  #fff;
-    box-shadow: 0px 4px 30px 0px ;
+    box-shadow: 0px 4px 10px 0px ;
 }
 /* header container styles*/
 .header-container{
@@ -74,18 +74,39 @@ nav ul{
     width: 30%;
     margin:  20px 0px;
 }
+.banner-img{
+    width: 700px;
+}
 /*banner section styles*/
 .banner,.we-are-gamer,.play-online-games{
     margin-top: 150px;
-    margin-bottom: 0%;
+    margin-bottom: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-between;
     align-items: center;
 }
 /*banner description styles*/
 .banner-description{
-    margin: 148px 306px 148px 240px;
+    width: 600px;
+    height: 700px;
+    background-color: aliceblue;
+    padding-top: 50px;
+    padding-inline-start:10vh;
+
 }
+/*banner list icon styles*/
+#frame{
+    width: 24px;
+    height: 24px;
+}
+.banner-list{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+
 /*banner title styles*/
 .banner-title{
     color: #0B0223;
@@ -150,19 +171,27 @@ div ul{
 }
 /*gamer section styles*/
 .gamer-section{
-    text-align: right;
+    text-align-last: right;
+
 }
 /*gamer banner description section styles*/
-.gamer-banner-description,.game-description
+.gamer-banner-description,.game-description,.online-game-banner-description
 {    
-    width: 450px;
-    color: #534C64;  
-    font-family: Work Sans;
+    width: 480px;
+    color: #534C64; 
     font-size: 18px;
     font-weight: 400;
     line-height: 30px; 
     margin-right:0px ;
+    align-items: center;
 }
+.gamer-banner-description{
+    text-align:right;
+}
+.online-game-banner-description{
+    text-align:left;
+}
+
 .game-description{
     width: 342px;
     text-align: center;
@@ -200,12 +229,18 @@ div ul{
     
 }
 .game-type-info{
-    width: 243px;
+    width: 244px;
     height: 80px;
     background: #FFF;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     align-items: center;
+    gap: 20px;
+}
+.game-name{
+    color: #0B0223;
+    font-size: 16px;
+    font-weight: 400;
 }
 .game-type-info:hover{
     cursor: pointer;
@@ -247,18 +282,21 @@ div ul{
     justify-content: center;
     gap: 60px;
 }
-.footer-icon,.footer-types-element{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+.footer-icon{
+    display: grid;
+    grid-template-columns:repeat(6,1fr);
     margin-top: 66px;
+    margin-left: 100px;
 
 }
 .footer-types-element{
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 500;display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 66px;
 
 }
 .footer-massage{
@@ -270,9 +308,56 @@ margin-top:28px ;
 }
 /*responsive media*/
 @media screen and (max-width:575px){
-    
-    nav,ul ,.header,.header-info{
+   
+    nav,ul,.header-container,.header-info,.header-content,.we-are-gamer{
         flex-direction: column;
+        box-shadow: none;
+        align-items: center;
+    }
+    .banner-img,.banner-description{
+        
+        align-items: center;
+        margin: 100px auto;
+
+    }
+    
+    .banner,.game-types,.game-type-info{
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+    .gamer-banner-description,.online-games-title,.online-game-banner-description{
+        text-align: center;
+    }
+    .gamer-section,.gamer-title-color,.our-purpose{
+        display:block;
+        vertical-align: middle;
+    }
+    .online-games-videos-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px;
+        align-items: center;
+    }
+    
+    .play-online-games{
+        flex-direction: column-reverse;
+        
+    }
+    .game-type-info{
+        
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    .footer-icon{
+        grid-template-columns:repeat(3,1fr);
+        gap: 10px;
+        align-items: center;
+    }
+    .footer-types-element{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        gap: 20px;
+
     }
     
 }
