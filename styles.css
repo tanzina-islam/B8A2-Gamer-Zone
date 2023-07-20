@@ -137,7 +137,6 @@ nav ul{
 /*gamer sections title font styles*/
 .gamer-title-color{
     font-size: 2rem;
-    text-align: right;
 }
 
 /*unordered division styles*/
@@ -199,7 +198,6 @@ div ul{
 /*our purpose section styles*/
 .our-purpose{
     color: #534C64;
-    text-align: right;
     font-size: 24px;
     font-weight: 500;
     line-height: 45px;
@@ -329,9 +327,9 @@ margin-top:28px ;
     .gamer-banner-description,.online-games-title,.online-game-banner-description{
         text-align: center;
     }
-    .gamer-section,.gamer-title-color,.our-purpose{
-        display:block;
-        vertical-align: middle;
+    .gamer-section{
+        align-items: center;
+        text-align: center;
     }
     .online-games-videos-section{
         display: grid;
