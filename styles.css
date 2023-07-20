@@ -250,7 +250,8 @@ div ul{
 .game-types{
     width: 1700px;
     height: 500px;
-    margin: 400px 320px 71px 240px;
+    margin-top: 400px;
+    margin-bottom: 240px;
     display: flex;
     flex-wrap: wrap;
     gap: 70px;  
@@ -341,12 +342,12 @@ margin-top:28px ;
     
     .play-online-games{
         flex-direction: column-reverse;
-        
+    }
+    .game-types{
+        width: 575px;
     }
     .game-type-info{
-        
         grid-template-columns: repeat(3,1fr);
-        
     }
     .footer-icon{
         grid-template-columns:repeat(3,1fr);
